@@ -1,0 +1,58 @@
+/* src/components/NavBar.css */
+.custom-navbar {
+    background: url('https://images.unsplash.com/photo-1510024288543-f0f81b48f82d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center; 
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-attachment: fixed; /* Fija la imagen en el fondo para evitar el desplazamiento */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra del navbar */
+    padding: 0.5rem 1rem; /* Espaciado del navbar */
+  }
+  .custom-navbar .navbar-nav {
+    display: flex; /* Organiza los enlaces en una fila */
+    align-items: center; /* Centra los enlaces verticalmente */
+    gap: 1rem; /* Espacio entre los enlaces */
+    justify-content: center;
+  }
+
+
+  .custom-navbar .navbar-brand {
+    color: blueviolet; /* Color del texto del brand */
+    text-decoration: none;
+    font-weight: bold;
+    
+  }
+  
+  .custom-navbar .navbar-toggler {
+    border-color:blueviolet; /* Color del borde del botón de colapso */
+  }
+  
+ 
+  
+  .custom-navbar .nav-link {
+    color:blueviolet; /* Color de los enlaces */
+    padding: 0.5rem 1rem; /* Espaciado de los enlaces */
+    display: flex;
+    text-decoration: none;
+    
+    justify-content: space-around;
+    
+  }
+  
+  .custom-navbar .nav-link:hover {
+    color: black; /* Color de los enlaces al pasar el cursor */
+    background-color: #d5d8db; /* Color de fondo al pasar el cursor */
+    border-radius: 5px;
+  }
+  
+  .custom-navbar .nav-dropdown-menu {
+    background-color: #343a40; /* Color de fondo del menú desplegable */
+  }
+  
+  .custom-navbar .nav-dropdown-item {
+    color: #ffffff; /* Color de los elementos del menú desplegable */
+  }
+  
+  .custom-navbar .nav-dropdown-item:hover {
+    background-color: #495057; /* Color de fondo al pasar el cursor en el menú desplegable */
+  }
+  
+ 
