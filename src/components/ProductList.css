@@ -1,0 +1,117 @@
+/* Estilos para la lista de productos */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    padding: 0;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),url('./fondo-de-pantalla-prin.jpg');
+  }
+  
+  /* Estilos para cada tarjeta de producto */
+  .product-item {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .product-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 18px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Estilos para la imagen del producto */
+  .product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-item:hover .product-image {
+    transform: scale(1.05);
+  }
+  
+  /* Estilos para los detalles del producto */
+  .product-details {
+    flex-grow: 1;
+  }
+  
+  .product-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .product-description {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .product-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #27ae60;
+    margin-bottom: 25px;
+  }
+  
+  /* Estilos para el botón de añadir al carrito */
+  .add-to-cart-button {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: slateblue;
+    transform: scale(1.03);
+  }
+  
+  /* Diseño responsivo: ajustar columnas en pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .product-list {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  
+    .product-item {
+      padding: 15px;
+    }
+  
+    .add-to-cart-button {
+      padding: 10px 0;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-list {
+      grid-template-columns: 1fr;
+    }
+  
+    .product-item {
+      padding: 10px;
+    }
+  
+    .greeting {
+      font-size: 2rem;
+    }
+  }
+  

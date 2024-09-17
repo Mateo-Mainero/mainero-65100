@@ -1,0 +1,61 @@
+
+
+  /* Estilos para cada tarjeta de producto */
+  .product-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    
+  }
+  
+  .product-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Estilos para la imagen del producto */
+  .product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    
+  }
+  
+  /* Estilos para el nombre del producto */
+  .product-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    
+  }
+  
+  /* Estilos para la descripción del producto */
+  .product-description {
+    font-size: 1rem;
+    color: #777;
+  }
+  /* Estilos para el contenedor principal */
+.item-list-container {
+    padding: 40px;
+    max-width: 1200px;
+    
+    margin-top: 20px; /* Puedes ajustar este valor según lo que necesites */
+    background-color: #fafafa;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Estilos para el saludo */
+  .greeting {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #4a90e2;
+    
+  }
+  

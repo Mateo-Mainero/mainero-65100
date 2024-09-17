@@ -1,28 +1,17 @@
 import React from 'react';
-import { Badge } from 'react-bootstrap';
 import { FaShoppingCart } from 'react-icons/fa';
+import { useCart } from '../context/CartContext';
+import { Link } from 'react-router-dom';
 
-function CartWidget({ onClick }) {
-  const fixedItemCount = 5; // Número fijo (hardcodeado) para mostrar en la notificación
+function CartWidget() {
+  const { cart } = useCart();
+  const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
 
   return (
-    <div style={{ position: 'relative', display: 'inline-block' }}>
-      <button 
-        onClick={onClick} 
-        style={{ 
-          background: 'none', 
-          border: 'none', 
-          padding: 0, 
-          cursor: 'pointer',
-          position: 'relative'
-        }}
-      >
-        <FaShoppingCart size={24} />
-        <Badge pill bg="danger" style={{ position: 'absolute', top: '-10px', right: '-10px' }}>
-          {fixedItemCount}
-        </Badge>
-      </button>
-    </div>
+    <Link to="/cart" className="cart-widget">
+      <FaShoppingCart size={24} />
+      {totalItems > 0 && <span className="cart-count">{totalItems}</span>}
+    </Link>
   );
 }
 

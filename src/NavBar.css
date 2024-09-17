@@ -1,6 +1,6 @@
 /* src/components/NavBar.css */
 .custom-navbar {
-    background: url('https://images.unsplash.com/photo-1510024288543-f0f81b48f82d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center; 
+    background:  linear-gradient(to bottom, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1510024288543-f0f81b48f82d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center; 
     background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
     background-attachment: fixed; /* Fija la imagen en el fondo para evitar el desplazamiento */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra del navbar */
